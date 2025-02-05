@@ -179,17 +179,16 @@ Expo CLI
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-#Features and Usage
-Theme Toggle
-The app supports both dark and light themes. The theme can be switched via an icon button at the top of the screen.
-
-Taking and Saving Photos
-Tap the camera icon to take a photo of a plant.
-Enter a name for the photo and optional notes.
-Tap the save icon to save the photo along with the name and notes.
-Viewing Photos
-All saved photos are listed below the camera input.
-Each photo displays its name, date, and an option to navigate to a details page.
+# Features and Usage
+- Theme Toggle
+- The app supports both dark and light themes. The theme can be switched via an icon button at the top of the screen.
+- Taking and Saving Photos
+- Tap the camera icon to take a photo of a plant.
+- Enter a name for the photo and optional notes.
+- Tap the save icon to save the photo along with the name and notes.
+- Viewing Photos
+- All saved photos are listed below the camera input no need to switch screens.
+- Each photo displays its name, date, and an option to navigate to a details page where user can edit the name and the description of the image or change the image itself.
 
 ## Folder Structure
 ```sh
