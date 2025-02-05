@@ -78,6 +78,9 @@
 ## About The Project
 
 [![Product Name Screen Shot](./screenshots/image.png)](./screenshots/image.png)
+[![Product Name Screen Shot](./screenshots/plant1.png)](./screenshots/plant1.png)
+[![Product Name Screen Shot](./screenshots/plant2.png)](./screenshots/plant2.png)
+[![Product Name Screen Shot](./screenshots/plant3.png)](./screenshots/plant3.png)
 The **Plant Photo App** allows users to capture, store, and view photos of plants in the same screen. It features a clean and simple interface for taking plant photos, naming them, and adding optional notes. All photos are saved locally and can be accessed from a list view.
  - first user can take a photo by clicking the camera button. Then use the plant photo and name it. The photo notes is optional then save it by clicking the Save Icon.
  -  List View: View for browsing  plants.
