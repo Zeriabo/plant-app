@@ -208,8 +208,9 @@ Each photo displays its name, date, and an option to navigate to a details page.
 │   │   ├── _layout.tsx        # Tab layout and navigation
 │   │   ├── index.tsx          # List view of saved photos and adding photos
 │   │   └── settings.tsx       # Settings page 
-        └── profile.tsx        # Profile page
-│   ├── _layout.tsx            # Root layout for navigation
+│   │   └── profile.tsx        # Profile page
+│   ├── layout.tsx             # Root layout for navigation
+    ├── -not/found.tsx         # Not Found page
 │   └── details.tsx            # Photo detail page 
 ├── store/
 │   ├── slices/
