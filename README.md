@@ -97,15 +97,37 @@ The **Plant Photo App** allows users to capture, store, and view photos of plant
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+## Major Frameworks and Libraries Used
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* [![React Native][React-Native]][React-Native-url]
+* [![React Navigation][React-Navigation]][React-Navigation-url]
+* [![Redux Toolkit][Redux-Toolkit]][Redux-Toolkit-url]
+* [![Expo][Expo]][Expo-url]
+* [![React Native Paper][React-Native-Paper]][React-Native-Paper-url]
+* [![Expo Image Picker][Expo-Image-Picker]][Expo-Image-Picker-url]
+
+## Acknowledgements
+
+* [![UUID][UUID]][UUID-url] - For generating unique IDs for photos.
+* [![React Native Vector Icons][React-Native-Vector-Icons]][React-Native-Vector-Icons-url] - For using icons like `camera` and `save`.
+
+[React-Native]: https://reactnative.dev/
+[React-Native-url]: https://reactnative.dev/
+[React-Navigation]: https://reactnavigation.org/
+[React-Navigation-url]: https://reactnavigation.org/
+[Redux-Toolkit]: https://redux-toolkit.js.org/
+[Redux-Toolkit-url]: https://redux-toolkit.js.org/
+[Expo]: https://expo.dev/
+[Expo-url]: https://expo.dev/
+[React-Native-Paper]: https://callstack.github.io/react-native-paper/
+[React-Native-Paper-url]: https://callstack.github.io/react-native-paper/
+[Expo-Image-Picker]: https://docs.expo.dev/versions/latest/sdk/imagepicker/
+[Expo-Image-Picker-url]: https://docs.expo.dev/versions/latest/sdk/imagepicker/
+[UUID]: https://www.npmjs.com/package/uuid
+[UUID-url]: https://www.npmjs.com/package/uuid
+[React-Native-Vector-Icons]: https://github.com/oblador/react-native-vector-icons
+[React-Native-Vector-Icons-url]: https://github.com/oblador/react-native-vector-icons
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
