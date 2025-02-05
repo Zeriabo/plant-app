@@ -80,8 +80,10 @@
 
 [![Product Name Screen Shot](./screenshots/image.png)](./screenshots/image.png)
 The **Plant Photo App** allows users to capture, store, and view photos of plants in the same screen. It features a clean and simple interface for taking plant photos, naming them, and adding optional notes. All photos are saved locally and can be accessed from a list view.
- - first user can take a photo by clicking the camera button. then use the plant photo and name it the photo notes is optional then save it by clicking the Save Icon. the pant Photo will be displayed in the same view. This is List: View for browsing and adding plants.
- - then there is setting view which is empty and a Profile view 
+ - first user can take a photo by clicking the camera button. then use the plant photo and name it the photo notes is optional then save it by clicking the Save Icon.
+ -  List View: View for browsing  plants.
+ - clicking the plant photo will take you to the Details view which you can chang ethe name and add notes or change them
+ - then there is setting view which is empty and a Profile view
  - Above on the right there is Icon to swtich to dark mode and light mode.
 
 
@@ -133,6 +135,7 @@ The **Plant Photo App** allows users to capture, store, and view photos of plant
 - **Take Photos:** Use the camera to capture plant photos.
 - **Save Photos:** Provide a name and optional notes to save photos.
 - **List View:** View all saved photos, including their name, date, and notes.
+- **Details View:** View certain photo, including their name, and notes and option to edit the name and the notes and change the photo.
 - **Theme Toggle:** Switch between dark and light themes.
 - **Cross-Platform Support:** Built with Expo for seamless iOS and Android compatibility.
 
