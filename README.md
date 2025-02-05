@@ -110,8 +110,9 @@ The **Plant Photo App** allows users to capture, store, and view photos of plant
 
 ## Acknowledgements
 
-* [![UUID][UUID]][UUID-url] - For generating unique IDs for photos.
-* [![React Native Vector Icons][React-Native-Vector-Icons]][React-Native-Vector-Icons-url] - For using icons like `camera` and `save`.
+* [![UUID](https://img.shields.io/badge/UUID-9B59B6?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/package/uuid) - For generating unique IDs for photos.
+* [![React Native Vector Icons](https://img.shields.io/badge/React%20Native%20Vector%20Icons-000000?style=for-the-badge&logo=react&logoColor=white)](https://github.com/oblador/react-native-vector-icons) - For using icons like camera and save.
+
 
 [React-Native]: https://reactnative.dev/
 [React-Native-url]: https://reactnative.dev/
