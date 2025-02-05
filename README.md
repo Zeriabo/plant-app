@@ -53,6 +53,9 @@
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
+      <ul>
+          <li><a href="#architecture-overview">Architecture Overview</a></li>
+         </ul>
     </li>
        <li>
       <a href="#features">Features</a>
@@ -104,8 +107,21 @@ The **Plant Photo App** allows users to capture, store, and view photos of plant
 * [![React Native Paper](https://img.shields.io/badge/React%20Native%20Paper-0288D1?style=for-the-badge&logo=react&logoColor=white)](https://callstack.github.io/react-native-paper/)
 * [![Expo Image Picker](https://img.shields.io/badge/Expo%20Image%20Picker-1E1E1E?style=for-the-badge&logo=expo&logoColor=white)](https://docs.expo.dev/versions/latest/sdk/imagepicker/)
 
-
-
+## Architecture Overview
+  The app follows a modular architecture, separating concerns into different folders and components:
+  components:
+  - Screens: Contains main views (List View, Scan View, Details View, Profile, Settings).
+  - State Management: Uses Redux Toolkit for managing saved photos and theme mode.
+  - Navigation: Uses React Navigation to switch between tabs.
+  - Storage: Stores photos locally using Redux state.
+  Technical Decisions
+  - React Native with Expo: Chosen for fast development and easy deployment.
+  - Redux Toolkit: Provides centralized state management for better performance.
+  - React Native Paper: Used for UI components to ensure a consistent design.
+  - Expo Image Picker: Simplifies photo capture and selection.
+  - UUID: Generates unique IDs for saved photos so its easy to update.
+  - Dark Mode Support: Implemented using Redux to toggle between themes later if needed theme can be changed in the other screen.
+    
 ## Acknowledgements
 
 * [![UUID](https://img.shields.io/badge/UUID-9B59B6?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/package/uuid) - For generating unique IDs for photos.
