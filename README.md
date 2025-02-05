@@ -80,10 +80,10 @@
 
 [![Product Name Screen Shot](./screenshots/image.png)](./screenshots/image.png)
 The **Plant Photo App** allows users to capture, store, and view photos of plants in the same screen. It features a clean and simple interface for taking plant photos, naming them, and adding optional notes. All photos are saved locally and can be accessed from a list view.
- - first user can take a photo by clicking the camera button. then use the plant photo and name it the photo notes is optional then save it by clicking the Save Icon.
+ - first user can take a photo by clicking the camera button. Then use the plant photo and name it. The photo notes is optional then save it by clicking the Save Icon.
  -  List View: View for browsing  plants.
- - clicking the plant photo will take you to the Details view which you can chang ethe name and add notes or change them
- - then there is setting view which is empty and a Profile view
+ - clicking the plant photo will take you to the Details view which you can change the name and add notes or change the Image by takin another photo.
+ - then there is setting view which is empty and a Profile view also.
  - Above on the right there is Icon to swtich to dark mode and light mode.
 
 
@@ -172,7 +172,8 @@ _Below is an example of how you can instruct your audience on installing and set
     ```sh
    yarn start
    ```
-
+6. Run by IOS or Android:
+  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -205,17 +206,18 @@ Each photo displays its name, date, and an option to navigate to a details page.
 ├── app/
 │   ├── (tabs)/
 │   │   ├── _layout.tsx        # Tab layout and navigation
-│   │   ├── index.tsx          # List view of saved photos
-│   │   └── settings.tsx       # Settings page (if applicable)
+│   │   ├── index.tsx          # List view of saved photos and adding photos
+│   │   └── settings.tsx       # Settings page 
+        └── profile.tsx        # Profile page
 │   ├── _layout.tsx            # Root layout for navigation
-│   └── details.tsx            # Photo detail page (if applicable)
+│   └── details.tsx            # Photo detail page 
 ├── store/
 │   ├── slices/
 │   │   ├── photoSlice.ts      # Redux slice for managing photos
 │   │   └── themeSlice.ts      # Redux slice for theme management
 │   ├── store.ts               # Store configuration
 ├── assets/
-│   └── fonts/                 # Custom fonts (e.g., SpaceMono-Regular.ttf)
+│   └── fonts/                 # Custom fonts 
 ├── package.json               # Project dependencies
 ├── yarn.lock                  # Yarn lock file
 └── tsconfig.json              # TypeScript configuration
