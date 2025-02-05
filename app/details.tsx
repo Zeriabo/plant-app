@@ -13,6 +13,7 @@ import { updatePhoto, selectPhotos } from "../store/slices/photoSlice";
 import { useLocalSearchParams } from "expo-router";
 import * as ImagePicker from "expo-image-picker";
 import { useNavigation } from "@react-navigation/native";
+import { IconButton, MD3Colors } from "react-native-paper";
 
 interface Photo {
   id: string;
@@ -91,8 +92,13 @@ export default function DetailView() {
   return (
     <View style={styles.container}>
       <Image source={{ uri: photo.uri }} style={styles.photo} />
-      <Button title="Take New Photo" onPress={takePhoto} />
 
+      <IconButton
+        icon="camera"
+        iconColor={MD3Colors.error50}
+        size={40}
+        onPress={takePhoto}
+      />
       <TextInput
         style={styles.input}
         value={name}
@@ -107,8 +113,7 @@ export default function DetailView() {
         placeholder="Enter plant notes"
         multiline
       />
-
-      <Button title="Save Changes" onPress={handleSave} />
+      <IconButton icon="content-save" onPress={handleSave} />
     </View>
   );
 }
