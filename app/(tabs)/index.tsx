@@ -16,7 +16,12 @@ import { selectPhotos, addPhoto } from "../../store/slices/photoSlice";
 import { useRouter } from "expo-router";
 import { v4 as uuidv4 } from "uuid";
 import "react-native-get-random-values";
-import { IconButton, MD3DarkTheme, MD3LightTheme } from "react-native-paper";
+import {
+  IconButton,
+  MD3DarkTheme,
+  MD3LightTheme,
+  MD3Colors,
+} from "react-native-paper";
 import { RootState } from "@/store/store";
 import { toggleTheme } from "@/store/slices/themeSlice";
 
@@ -77,7 +82,6 @@ export default function ListView({ navigation }: any) {
   const isDarkTheme = useSelector(
     (state: RootState) => state.theme.isDarkTheme
   );
-  const paperTheme = isDarkTheme ? MD3DarkTheme : MD3LightTheme;
 
   const renderItem = ({ item }: any) => (
     <TouchableOpacity
@@ -107,7 +111,13 @@ export default function ListView({ navigation }: any) {
       <Text style={styles.title}>Plant Photo App</Text>
 
       <View style={styles.addPhotoContainer}>
-        <Button title="Take Photo" onPress={takePhoto} />
+        <IconButton
+          icon="camera"
+          iconColor={MD3Colors.error50}
+          size={40}
+          onPress={takePhoto}
+        />
+
         {photo && <Image source={{ uri: photo }} style={styles.image} />}
         <TextInput
           style={styles.input}
@@ -121,7 +131,7 @@ export default function ListView({ navigation }: any) {
           value={notes}
           onChangeText={setNotes}
         />
-        <Button title="Save Photo" onPress={savePhoto} />
+        <IconButton icon="content-save" onPress={savePhoto} />
       </View>
 
       <View style={styles.listContainer}>
@@ -149,6 +159,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: "bold",
     marginBottom: 20,
+    marginTop: 40,
   },
   addPhotoContainer: {
     marginBottom: 30,
@@ -184,9 +195,10 @@ const styles = StyleSheet.create({
     borderRadius: 5,
   },
   iconbutton: {
-    flex: 0,
-    left: 200,
+    position: "absolute",
     top: 40,
+    right: 20,
+    marginTop: 40,
     borderRadius: 5,
   },
 });
