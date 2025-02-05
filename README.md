@@ -222,11 +222,9 @@ Each photo displays its name, date, and an option to navigate to a details page.
  ```
 
 ## Libraries Used
-### React Native Paper: UI components like buttons, icons, and theme support.
-### Expo: Cross-platform framework for building the app.
-### Redux Toolkit: State management for the app (photos and theme).
-### React Navigation: For navigating between views.
-### Expo Image Picker: To pick images from the camera or gallery.
+* [![React][React.js]][React-url]
+
+
 
 <!-- CONTRIBUTING -->
 ## Contributing
