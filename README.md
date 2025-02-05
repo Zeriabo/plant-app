@@ -34,10 +34,11 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Plant Photo App</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+  The **Plant Photo App** allows users to capture, store, and view photos of plants. It features a clean and simple interface for taking plant photos, naming them, and adding optional notes. All photos are saved locally and can be accessed from a list view.
+
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
@@ -62,6 +63,9 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
+       <li>
+      <a href="#features">Features</a>
+      <ul>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
@@ -84,17 +88,8 @@
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
+The **Plant Photo App** allows users to capture, store, and view photos of plants. It features a clean and simple interface for taking plant photos, naming them, and adding optional notes. All photos are saved locally and can be accessed from a list view.
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -102,19 +97,50 @@ Use the `BLANK_README.md` to get started.
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+## Major Frameworks and Libraries Used
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* [![React Native](https://img.shields.io/badge/React%20Native-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactnative.dev/)
+* [![React Navigation](https://img.shields.io/badge/React%20Navigation-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactnavigation.org/)
+* [![Redux Toolkit](https://img.shields.io/badge/Redux%20Toolkit-764ABC?style=for-the-badge&logo=redux&logoColor=white)](https://redux-toolkit.js.org/)
+* [![Expo](https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white)](https://expo.dev/)
+* [![React Native Paper](https://img.shields.io/badge/React%20Native%20Paper-0288D1?style=for-the-badge&logo=react&logoColor=white)](https://callstack.github.io/react-native-paper/)
+* [![Expo Image Picker](https://img.shields.io/badge/Expo%20Image%20Picker-1E1E1E?style=for-the-badge&logo=expo&logoColor=white)](https://docs.expo.dev/versions/latest/sdk/imagepicker/)
+
+
+
+## Acknowledgements
+
+* [![UUID](https://img.shields.io/badge/UUID-9B59B6?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/package/uuid) - For generating unique IDs for photos.
+* [![React Native Vector Icons](https://img.shields.io/badge/React%20Native%20Vector%20Icons-000000?style=for-the-badge&logo=react&logoColor=white)](https://github.com/oblador/react-native-vector-icons) - For using icons like camera and save.
+
+
+[React-Native]: https://reactnative.dev/
+[React-Native-url]: https://reactnative.dev/
+[React-Navigation]: https://reactnavigation.org/
+[React-Navigation-url]: https://reactnavigation.org/
+[Redux-Toolkit]: https://redux-toolkit.js.org/
+[Redux-Toolkit-url]: https://redux-toolkit.js.org/
+[Expo]: https://expo.dev/
+[Expo-url]: https://expo.dev/
+[React-Native-Paper]: https://callstack.github.io/react-native-paper/
+[React-Native-Paper-url]: https://callstack.github.io/react-native-paper/
+[Expo-Image-Picker]: https://docs.expo.dev/versions/latest/sdk/imagepicker/
+[Expo-Image-Picker-url]: https://docs.expo.dev/versions/latest/sdk/imagepicker/
+[UUID]: https://www.npmjs.com/package/uuid
+[UUID-url]: https://www.npmjs.com/package/uuid
+[React-Native-Vector-Icons]: https://github.com/oblador/react-native-vector-icons
+[React-Native-Vector-Icons-url]: https://github.com/oblador/react-native-vector-icons
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Features
+
+- **Take Photos:** Use the camera to capture plant photos.
+- **Save Photos:** Provide a name and optional notes to save photos.
+- **List View:** View all saved photos, including their name, date, and notes.
+- **Theme Toggle:** Switch between dark and light themes.
+- **Cross-Platform Support:** Built with Expo for seamless iOS and Android compatibility.
 
 
 <!-- GETTING STARTED -->
@@ -134,19 +160,20 @@ This is an example of how to list things you need to use the software and how to
 ### Installation
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/zeriabo/plant-app.git
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+2. unzip the folder
+3. cd plant-app
+
+4. Install dependencies
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   yarn install
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+5. Start the development server:
+    ```sh
+   yarn start
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -154,30 +181,51 @@ _Below is an example of how you can instruct your audience on installing and set
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Prerequisites
+Ensure you have the following installed:
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+Node.js (version 14 or later)
+Yarn (or npm)
+Expo CLI
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+#Features and Usage
+Theme Toggle
+The app supports both dark and light themes. The theme can be switched via an icon button at the top of the screen.
+
+Taking and Saving Photos
+Tap the camera icon to take a photo of a plant.
+Enter a name for the photo and optional notes.
+Tap the save icon to save the photo along with the name and notes.
+Viewing Photos
+All saved photos are listed below the camera input.
+Each photo displays its name, date, and an option to navigate to a details page.
+
+## Folder Structure
+```sh
+├── app/
+│   ├── (tabs)/
+│   │   ├── _layout.tsx        # Tab layout and navigation
+│   │   ├── index.tsx          # List view of saved photos
+│   │   └── settings.tsx       # Settings page (if applicable)
+│   ├── _layout.tsx            # Root layout for navigation
+│   └── details.tsx            # Photo detail page (if applicable)
+├── store/
+│   ├── slices/
+│   │   ├── photoSlice.ts      # Redux slice for managing photos
+│   │   └── themeSlice.ts      # Redux slice for theme management
+│   ├── store.ts               # Store configuration
+├── assets/
+│   └── fonts/                 # Custom fonts (e.g., SpaceMono-Regular.ttf)
+├── package.json               # Project dependencies
+├── yarn.lock                  # Yarn lock file
+└── tsconfig.json              # TypeScript configuration
+ ```
+
+## Libraries Used
+* [![React][React.js]][React-url]
 
 
 
@@ -211,9 +259,8 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Zeriab -- zeriab@hotmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
