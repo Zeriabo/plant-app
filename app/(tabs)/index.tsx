@@ -16,6 +16,9 @@ import { selectPhotos, addPhoto } from "../../store/slices/photoSlice";
 import { useRouter } from "expo-router";
 import { v4 as uuidv4 } from "uuid";
 import "react-native-get-random-values";
+import { IconButton, MD3DarkTheme, MD3LightTheme } from "react-native-paper";
+import { RootState } from "@/store/store";
+import { toggleTheme } from "@/store/slices/themeSlice";
 
 export default function ListView({ navigation }: any) {
   const [photo, setPhoto] = useState<string | null>(null);
@@ -71,6 +74,10 @@ export default function ListView({ navigation }: any) {
     setNotes("");
     Alert.alert("Success", "Photo saved successfully.");
   };
+  const isDarkTheme = useSelector(
+    (state: RootState) => state.theme.isDarkTheme
+  );
+  const paperTheme = isDarkTheme ? MD3DarkTheme : MD3LightTheme;
 
   const renderItem = ({ item }: any) => (
     <TouchableOpacity
@@ -90,6 +97,13 @@ export default function ListView({ navigation }: any) {
 
   return (
     <View style={styles.container}>
+      <IconButton
+        icon={isDarkTheme ? "weather-sunny" : "moon-waxing-crescent"}
+        size={24}
+        onPress={() => dispatch(toggleTheme())}
+        mode="contained"
+        style={styles.iconbutton}
+      />
       <Text style={styles.title}>Plant Photo App</Text>
 
       <View style={styles.addPhotoContainer}>
@@ -167,6 +181,12 @@ const styles = StyleSheet.create({
     marginTop: 10,
     paddingLeft: 10,
     width: "100%",
+    borderRadius: 5,
+  },
+  iconbutton: {
+    flex: 0,
+    left: 200,
+    top: 40,
     borderRadius: 5,
   },
 });
