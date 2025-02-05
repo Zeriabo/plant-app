@@ -99,12 +99,14 @@ The **Plant Photo App** allows users to capture, store, and view photos of plant
 
 ## Major Frameworks and Libraries Used
 
-* [![React Native][React-Native]][React-Native-url]
-* [![React Navigation][React-Navigation]][React-Navigation-url]
-* [![Redux Toolkit][Redux-Toolkit]][Redux-Toolkit-url]
-* [![Expo][Expo]][Expo-url]
-* [![React Native Paper][React-Native-Paper]][React-Native-Paper-url]
-* [![Expo Image Picker][Expo-Image-Picker]][Expo-Image-Picker-url]
+* [![React Native](https://img.shields.io/badge/React%20Native-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactnative.dev/)
+* [![React Navigation](https://img.shields.io/badge/React%20Navigation-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactnavigation.org/)
+* [![Redux Toolkit](https://img.shields.io/badge/Redux%20Toolkit-764ABC?style=for-the-badge&logo=redux&logoColor=white)](https://redux-toolkit.js.org/)
+* [![Expo](https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white)](https://expo.dev/)
+* [![React Native Paper](https://img.shields.io/badge/React%20Native%20Paper-0288D1?style=for-the-badge&logo=react&logoColor=white)](https://callstack.github.io/react-native-paper/)
+* [![Expo Image Picker](https://img.shields.io/badge/Expo%20Image%20Picker-1E1E1E?style=for-the-badge&logo=expo&logoColor=white)](https://docs.expo.dev/versions/latest/sdk/imagepicker/)
+
+
 
 ## Acknowledgements
 
