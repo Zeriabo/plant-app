@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import uuid from "react-native-uuid";
+import { v4 as uuid } from "uuid";
 
 interface Photo {
   id: string;
@@ -24,7 +24,7 @@ const photoSlice = createSlice({
     addPhoto: (state, action: PayloadAction<Photo>) => {
       const newPhoto = {
         ...action.payload,
-        id: uuid.v4() as string,
+        id: uuid(),
       };
 
       state.photos.push(newPhoto);

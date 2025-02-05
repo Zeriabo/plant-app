@@ -12,6 +12,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { updatePhoto, selectPhotos } from "../store/slices/photoSlice";
 import { useLocalSearchParams } from "expo-router";
 import * as ImagePicker from "expo-image-picker";
+import { useNavigation } from "@react-navigation/native";
 
 interface Photo {
   id: string;
@@ -21,14 +22,14 @@ interface Photo {
   date: string;
 }
 
-export default function DetailView({ navigation }: any) {
+export default function DetailView() {
   const photos = useSelector(selectPhotos);
   const dispatch = useDispatch();
   const item = useLocalSearchParams();
-  console.log(item);
   const [photo, setPhoto] = useState<Photo | null>(null);
   const [name, setName] = useState("");
   const [notes, setNotes] = useState("");
+  const navigation = useNavigation();
 
   useEffect(() => {
     const selectedPhoto = photos.find((p: Photo) => p.id === item.id);
