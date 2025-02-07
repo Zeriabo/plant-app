@@ -16,6 +16,7 @@ import { selectPhotos, addPhoto } from "../../store/slices/photoSlice";
 import { useRouter } from "expo-router";
 import { v4 as uuidv4 } from "uuid";
 import "react-native-get-random-values";
+import { IconButton, MD3Colors } from "react-native-paper";
 
 export default function ListView({ navigation }: any) {
   const [photo, setPhoto] = useState<string | null>(null);
@@ -93,7 +94,12 @@ export default function ListView({ navigation }: any) {
       <Text style={styles.title}>Plant Photo App</Text>
 
       <View style={styles.addPhotoContainer}>
-        <Button title="Take Photo" onPress={takePhoto} />
+        <IconButton
+          icon="camera"
+          iconColor={MD3Colors.error50}
+          size={40}
+          onPress={takePhoto}
+        />
         {photo && <Image source={{ uri: photo }} style={styles.image} />}
         <TextInput
           style={styles.input}
@@ -107,7 +113,7 @@ export default function ListView({ navigation }: any) {
           value={notes}
           onChangeText={setNotes}
         />
-        <Button title="Save Photo" onPress={savePhoto} />
+        <IconButton icon="content-save" onPress={savePhoto} />
       </View>
 
       <View style={styles.listContainer}>
@@ -134,7 +140,8 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     fontWeight: "bold",
-    marginBottom: 20,
+    marginBottom: 30,
+    top: 20,
   },
   addPhotoContainer: {
     marginBottom: 30,
