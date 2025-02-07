@@ -16,6 +16,7 @@ import { selectPhotos, addPhoto } from "../../store/slices/photoSlice";
 import { useRouter } from "expo-router";
 import { v4 as uuidv4 } from "uuid";
 import "react-native-get-random-values";
+
 import {
   IconButton,
   MD3DarkTheme,
@@ -24,6 +25,7 @@ import {
 } from "react-native-paper";
 import { RootState } from "@/store/store";
 import { toggleTheme } from "@/store/slices/themeSlice";
+
 
 export default function ListView({ navigation }: any) {
   const [photo, setPhoto] = useState<string | null>(null);
@@ -117,7 +119,6 @@ export default function ListView({ navigation }: any) {
           size={40}
           onPress={takePhoto}
         />
-
         {photo && <Image source={{ uri: photo }} style={styles.image} />}
         <TextInput
           style={styles.input}
@@ -158,8 +159,10 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     fontWeight: "bold",
+
     marginBottom: 20,
     marginTop: 40,
+
   },
   addPhotoContainer: {
     marginBottom: 30,
