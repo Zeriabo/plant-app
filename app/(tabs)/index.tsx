@@ -25,7 +25,7 @@ import {
 } from "react-native-paper";
 import { RootState } from "@/store/store";
 import { toggleTheme } from "@/store/slices/themeSlice";
-
+import { capturePhoto } from "@/util/cameraUtils";
 
 export default function ListView({ navigation }: any) {
   const [photo, setPhoto] = useState<string | null>(null);
@@ -39,25 +39,11 @@ export default function ListView({ navigation }: any) {
 
   const takePhoto = async () => {
     setIsLoading(true);
-    const { status } = await ImagePicker.requestCameraPermissionsAsync();
+    const photoUri = await capturePhoto();
     setIsLoading(false);
 
-    if (status !== "granted") {
-      Alert.alert(
-        "Permission Required",
-        "Camera access is needed to take a photo."
-      );
-      return;
-    }
-
-    const result = await ImagePicker.launchCameraAsync({
-      allowsEditing: true,
-      aspect: [4, 3],
-      quality: 1,
-    });
-
-    if (!result.canceled) {
-      setPhoto(result.assets[0].uri);
+    if (photoUri) {
+      setPhoto(photoUri);
     }
   };
 
@@ -162,7 +148,6 @@ const styles = StyleSheet.create({
 
     marginBottom: 20,
     marginTop: 40,
-
   },
   addPhotoContainer: {
     marginBottom: 30,

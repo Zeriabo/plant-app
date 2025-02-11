@@ -14,6 +14,7 @@ import { useLocalSearchParams } from "expo-router";
 import * as ImagePicker from "expo-image-picker";
 import { useNavigation } from "@react-navigation/native";
 import { IconButton, MD3Colors } from "react-native-paper";
+import { capturePhoto } from "@/util/cameraUtils";
 
 interface Photo {
   id: string;
@@ -56,23 +57,10 @@ export default function DetailView() {
   };
 
   const takePhoto = async () => {
-    const { status } = await ImagePicker.requestCameraPermissionsAsync();
-    if (status !== "granted") {
-      Alert.alert(
-        "Permission Required",
-        "Camera access is needed to take a photo."
-      );
-      return;
-    }
+    const photoUri = await capturePhoto();
 
-    const result = await ImagePicker.launchCameraAsync({
-      allowsEditing: true,
-      aspect: [4, 3],
-      quality: 1,
-    });
-
-    if (!result.canceled && result.assets.length > 0) {
-      setPhoto((prevPhoto) => ({
+    if (photoUri) {
+      setPhoto((prevPhoto: any) => ({
         ...(prevPhoto ?? {
           id: item.id,
           uri: "",
@@ -80,7 +68,7 @@ export default function DetailView() {
           notes: "",
           date: "",
         }),
-        uri: result.assets[0].uri,
+        uri: photoUri,
       }));
     }
   };
