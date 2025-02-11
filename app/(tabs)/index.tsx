@@ -5,12 +5,10 @@ import {
   Image,
   StyleSheet,
   FlatList,
-  Button,
   TextInput,
   Alert,
   TouchableOpacity,
 } from "react-native";
-import * as ImagePicker from "expo-image-picker";
 import { useSelector, useDispatch } from "react-redux";
 import { selectPhotos, addPhoto } from "../../store/slices/photoSlice";
 import { useRouter } from "expo-router";
